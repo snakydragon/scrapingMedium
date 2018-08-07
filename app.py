@@ -6,7 +6,7 @@ source = requests.get('https://medium.com/').text
 
 soup = BeautifulSoup(source, "lxml")
 
-with open("medium_scrape.csv", "w") as csv_file:
+with open("medium_scrape2.csv", "w") as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(["headline", "summary", "url"])
 
